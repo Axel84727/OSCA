@@ -27,7 +27,4 @@ After that, run `scons toolchain`, this should download and build the required t
 
 Finally, you should be able to run `scons`. Use `scons run` to test your OS using qemu.
 
-## Links
 
-* [Discord channel](https://discord.gg/RgHc5XrCEw)
-* [Patreon](https://www.patreon.com/nanobyte)
