@@ -1,30 +1,49 @@
-# nanobyte_os
-This repository contains the code from the ["Building an OS"](https://www.youtube.com/watch?v=9t-SPC7Tczc&list=PLFjM7v6KGMpiH2G-kT781ByCNC_0pKpPN) series on the ["Nanobyte"](https://www.youtube.com/channel/UCSPIuWADJIMIf9Erf--XAsA) YouTube channel.
+---
 
-## Building
+# Proyecto Bootloader
 
-First, install the following dependencies:
+Este proyecto contiene un bootloader básico escrito en ensamblador, configurado para construirse con SCons. El bootloader soporta varios sistemas de archivos, incluyendo FAT12, FAT16 y FAT32.
 
-```sh
-# Ubuntu, Debian:
-sudo apt install build-essential bison flex libgmp3-dev libmpc-dev libmpfr-dev texinfo wget \
-                   nasm mtools python3 python3-pip python3-parted scons dosfstools libguestfs-tools qemu-system-x86
+**Nota:** Este código forma parte de un código fuente en desarrollo para un sistema operativo más amplio. Actualmente, se está construyendo y se invita a los colaboradores a unirse para expandir y mejorar el proyecto.
 
-# Fedora:
-sudo dnf install gcc gcc-c++ make bison flex gmp-devel libmpc-devel mpfr-devel texinfo wget \
-                   nasm mtools python3 python3-pip python3-pyparted python3-scons dosfstools guestfs-tools qemu-system-x86
+## Descripción
 
-# Arch & Arch-based:
-paru -S gcc make bison flex libgmp-static libmpc mpfr texinfo nasm mtools qemu-system-x86 python3 scons
-```
-NOTE: to install all the required packages on Arch, you need an [AUR helper](https://wiki.archlinux.org/title/AUR_helpers).
+El bootloader es un programa que se ejecuta al inicio del proceso de arranque del sistema. Su función principal es inicializar el entorno y cargar un segundo stage desde el disco.
 
-Then you must run `python3 -m pip install -r requirements.txt`
+## Requisitos
 
-Next, modify the configuration in `build_scripts/config.py`. The most important is the `toolchain='../.toolchains'` option which sets where the toolchain will be downloaded and built. The default option is in the directory above where the repo is cloned, in a .toolchains directory, but you will get an error if this directory doesn't exist.
+- **SCons**: Herramienta de construcción de software.
+- **Assembler**: Herramienta para compilar archivos en lenguaje ensamblador.
+- **Entorno de emulación o hardware para pruebas**: Por ejemplo, QEMU o VirtualBox.
 
-After that, run `scons toolchain`, this should download and build the required tools (binutils and GCC). If you encounter errors during this step, you might have to modify `scripts/setup_toolchain.sh` and try a different version of **binutils** and **gcc**. Using the same version as the one bundled with your distribution is your best bet.
+## Estructura del Proyecto
 
-Finally, you should be able to run `scons`. Use `scons run` to test your OS using qemu.
+- **build_scripts/utility.py**: Contiene funciones útiles para la construcción, como `GlobRecursive`.
+- **linker.ld**: Script de enlace que define la disposición de la memoria.
+- **stage1.map**: Archivo de mapa generado durante el proceso de enlace.
+- ***.asm**: Archivos de ensamblador que contienen el código del bootloader.
 
+## Estructura del Código
+
+- **build_scripts/build.py**:
+  - Configura el entorno de construcción con SCons.
+  - Compila y enlaza archivos de ensamblador para crear el bootloader.
+
+- **bootloader.asm**:
+  - **.fsjump**: Salta al inicio del bootloader.
+  - **.fsheaders**: Configura los encabezados del sistema de archivos.
+  - **.entry**: Inicializa el entorno y maneja el disco.
+  - **.text**: Contiene el código principal del bootloader.
+  - **.rodata** y **.data**: Datos y mensajes utilizados por el bootloader.
+  - **.bss**: Espacio reservado para datos no inicializados.
+
+## Contribuciones
+
+Este proyecto está en desarrollo y estamos buscando colaboradores para expandirlo. Si estás interesado en contribuir, realiza un fork del repositorio y envía un pull request. Tu participación es muy apreciada.
+
+## Licencia
+
+Este proyecto está licenciado bajo la Licencia MIT. Consulta el archivo `LICENSE` para obtener más detalles.
+
+---
 
