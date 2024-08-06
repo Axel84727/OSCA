@@ -1,4 +1,5 @@
 #ifndef __OSCA_LIBC_VECTOR_H__
+#  include <libc/sys/cdefs.h> /* For __packed and EXTC definition */
 #  include <libc/stdbool.h>
 #  include <libc/stddef.h>
 #  include <libc/stdint.h>
