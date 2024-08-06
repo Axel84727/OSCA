@@ -10,20 +10,16 @@
 #    else
 #      define __packed        
 #    endif
-#    ifdef __cplusplus
-#      define EXTC           extern   "C"
-#      define EXTC_BEG_DECL  {
-#      define EXTC_END_DECL  }
-#      define EXTCC                      
-#      define EXTCC_BEG_DECL             
-#      define EXTCC_END_DECL             
-#    else
+#    ifndef __cplusplus
 #      define EXTC                       
-#      define EXTC_BEG_DECL              
-#      define EXTC_END_DECL              
+#      define EXTCC                      
+#      define EXT_BEG_DECL              
+#      define EXT_END_DECL              
+#    else
+#      define EXTC           extern   "C"
 #      define EXTCC          extern "C++"
-#      define EXTCC_BEG_DECL {
-#      define EXTCC_END_DECL }
+#      define EXT_BEG_DECL   {
+#      define EXT_END_DECL   }
 #    endif
 #    define __cdefs_macros_defined                 TRUE
 #  endif
