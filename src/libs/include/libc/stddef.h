@@ -1,5 +1,17 @@
 #ifndef __OSCA_LIBC_STDDEF_H__
-#  include <stdbool.h>
+#  include <libc/stdbool.h>
+
+#  if   defined( __i386__   ) || defined( __arm__     ) \
+   ||   defined( __powerpc__   ) || defined( __ppc__   ) || defined( __riscv   )
+#    define __POINTER_SIZE__        4
+#  elif defined( __x86_64__ ) || defined( __aarch64__ ) \
+   ||   defined( __powerpc64__ ) || defined( __ppc64__ ) || defined( __riscv64 )
+#    define __POINTER_SIZE__        8
+#  elif defined( __x86_16__ ) || defined( __m68k__ )
+#    define __POINTER_SIZE__        2
+#  else
+#    define __POINTER_SIZE__        1
+#  endif
 
 #  if !defined( __platform_types_defined )
 /* Tecnicamente una CPU hipotetica de 8 bits
