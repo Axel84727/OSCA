@@ -1,3 +1,4 @@
+#include <libc/sys/cdefs.h> /* For __bit_sizeof and __packed definition */
 #include <libc/stdarg.h>
 #include <libc/stdint.h>
 #include <libc/stddef.h>
