@@ -1,11 +1,13 @@
 #ifndef __OSCA_LIBC_STDARG_H__
+#  include <libc/sys/cdefs.h> /* For EXTC definition */
 #  include <libc/stdint.h>
+#  include <libc/stddef.h>
 #  if !defined( __stdarg_internal_defined )
      typedef void* va_list;
 
-     void  __va_start( va_list _ap, size_t _rp  );
-     void*   __va_arg( va_list* _ap, size_t _as );
-     void    __va_end( va_list _ap              );
+     EXTC void  __va_start( va_list _ap, size_t _rp  );
+     EXTC void*   __va_arg( va_list* _ap, size_t _as );
+     EXTC void    __va_end( va_list _ap              );
 #    define __stdarg_internal_defined        TRUE
 #  endif
 
