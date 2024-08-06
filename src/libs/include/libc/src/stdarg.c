@@ -218,6 +218,11 @@
         }
       }
 #   endif
+    for ( ; i < sz; i++ ) {
+      if ( (ptrdiff_t*)( (struct __va_list*)( __va_lists.arr )[ i ].saddr + (struct __va_list*)( __va_lists.arr )[ i ].offset ) == (ptrdiff_t*)( a0 ) ) {
+        sm = &( (struct __va_list*)( __va_lists.arr )[ i ] );
+      }
+    }
 
     if ( sm == NULL ) { return; }
 
