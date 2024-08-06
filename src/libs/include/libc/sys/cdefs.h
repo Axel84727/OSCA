@@ -10,6 +10,21 @@
 #    else
 #      define __packed        
 #    endif
+#    ifdef __cplusplus
+#      define EXTC           extern   "C"
+#      define EXTC_BEG_DECL  {
+#      define EXTC_END_DECL  }
+#      define EXTCC                      
+#      define EXTCC_BEG_DECL             
+#      define EXTCC_END_DECL             
+#    else
+#      define EXTC                       
+#      define EXTC_BEG_DECL              
+#      define EXTC_END_DECL              
+#      define EXTCC          extern "C++"
+#      define EXTCC_BEG_DECL {
+#      define EXTCC_END_DECL }
+#    endif
 #    define __cdefs_macros_defined                 TRUE
 #  endif
 #  define __OSCA_LIBC_SYS_CDEFS_H__             TRUE
