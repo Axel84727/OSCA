@@ -1,6 +1,7 @@
 ---
 
-# Proyecto Bootloader
+# Proyecto E.N.I.G.M.A.-OS
+E.V.E.R.E.S.T.-OS (Enhanced Virtualized Enterprise Real-time Extensible System Technology)
 
 Este proyecto contiene un bootloader básico escrito en ensamblador, configurado para construirse con SCons. El bootloader soporta varios sistemas de archivos, incluyendo FAT12, FAT16 y FAT32.
 
