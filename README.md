@@ -1,23 +1,64 @@
-# OSCA
+Licencia de Software Comercial Privada
 
-**OSCA** es un proyecto que busca desarrollar un sistema operativo desde cero. Está diseñado con el objetivo de explorar y aprender los principios fundamentales del diseño de sistemas operativos, involucrando a sus colaboradores en todos los aspectos de su creación, desde el kernel hasta la interfaz de usuario.
+Versión 1.0
 
-## Descripción del Proyecto
+Fecha: 18 de agosto de 2024
 
-El desarrollo de OSCA es un reto educativo y técnico que cubre múltiples áreas de la informática. El proyecto es construido completamente desde cero, lo que significa que no se basa en ningún otro sistema operativo preexistente. El enfoque está en la creación de un sistema operativo funcional y eficiente, abarcando tanto el manejo de procesos, la administración de memoria, como la interacción con hardware.
+Licenciante: [Nombre del propietario o entidad, si aplicable]
+Licenciatario: [Nombre del comprador, si aplicable]
 
+1. Concesión de Licencia
 
-## Colaboradores
+El Licenciante concede al Licenciatario un derecho no exclusivo, no transferible y revocable para usar el software OSCA ("Software"), sujeto a la compra y pago completo del Software según los términos acordados.
 
-Este proyecto es desarrollado y mantenido por:
+2. Condiciones de Compra
 
-- **zheoa**
-- **Axel84727**
+Para obtener una licencia de uso del Software, el Licenciatario debe adquirir una licencia pagada. El uso del Software sin haber adquirido una licencia pagada está estrictamente prohibido.
 
-## Licencia
+3. Uso Permitido
 
-OSCA es un proyecto con una licencia privada y de paga. Para más información sobre la licencia, por favor contacta a los propietarios del proyecto.
+El Licenciatario puede utilizar el Software exclusivamente para [especificar el propósito o uso permitido]. El uso comercial del Software está restringido a los propietarios del mismo. El Licenciatario no podrá modificar, adaptar, descompilar, ni hacer ingeniería inversa del Software sin consentimiento previo del Licenciante.
 
----
+4. Restricciones
 
-> **Nota:** OSCA está en constante desarrollo. Las características, capacidades y objetivos del proyecto pueden evolucionar con el tiempo a medida que el proyecto avanza.
+    Redistribución: El Licenciatario no podrá redistribuir, sublicenciar, ni vender el Software a terceros.
+    Modificación: El Licenciatario no podrá modificar el Software.
+    Venta del Proyecto: La venta del proyecto está atribuida únicamente a los propietarios.
+    Acceso al Código: El código fuente del Software tiene restricciones de acceso.
+
+5. Propiedad Intelectual
+
+Todos los derechos, títulos e intereses en el Software pertenecen al Licenciante.
+
+6. Soporte y Actualizaciones
+
+El Licenciante podrá proporcionar soporte y actualizaciones a su discreción y de acuerdo con un acuerdo separado.
+
+7. Terminación
+
+Esta licencia podrá ser terminada por el Licenciante en caso de incumplimiento.
+
+8. Exención de Garantías
+
+El Software se proporciona "tal cual". El Licenciante no es responsable por daños derivados del uso del Software.
+
+9. Ley Aplicable
+
+Esta licencia se regirá por las leyes de Uruguay.
+
+10. Contacto
+
+Para información sobre la compra de una licencia, contacta a:
+
+    Licenciante: [Nombre del propietario o entidad, si aplicable]
+    Correo Electrónico: [Dirección de correo electrónico]
+
+Aceptación de Términos
+
+El uso del Software por parte del Licenciatario estará condicionado a la aceptación de los términos de esta licencia, la cual se formalizará al adquirir la licencia pagada.
+Leyes Relevantes en Uruguay
+
+En Uruguay, la propiedad intelectual y las licencias de software están reguladas principalmente por:
+
+    Ley N.º 9.739 de Derechos de Autor: Regula los derechos de autor y los derechos conexos en Uruguay.
+    Ley N.º 17.616: Refuerza la protección de los derechos de autor, incluyendo los derechos sobre software.
