@@ -1,21 +1,11 @@
 # OSCA
 
-**OSCA** (Operating System Creation Adventure) es un proyecto que busca desarrollar un sistema operativo desde cero. Está diseñado con el objetivo de explorar y aprender los principios fundamentales del diseño de sistemas operativos, involucrando a sus colaboradores en todos los aspectos de su creación, desde el kernel hasta la interfaz de usuario.
+**OSCA** es un proyecto que busca desarrollar un sistema operativo desde cero. Está diseñado con el objetivo de explorar y aprender los principios fundamentales del diseño de sistemas operativos, involucrando a sus colaboradores en todos los aspectos de su creación, desde el kernel hasta la interfaz de usuario.
 
 ## Descripción del Proyecto
 
 El desarrollo de OSCA es un reto educativo y técnico que cubre múltiples áreas de la informática. El proyecto es construido completamente desde cero, lo que significa que no se basa en ningún otro sistema operativo preexistente. El enfoque está en la creación de un sistema operativo funcional y eficiente, abarcando tanto el manejo de procesos, la administración de memoria, como la interacción con hardware.
 
-## Lenguajes Utilizados
-
-OSCA está desarrollado en una combinación de lenguajes de programación, seleccionados por su eficiencia y capacidad para interactuar con el hardware de bajo nivel:
-
-- **C (72.5%)**
-- **Assembly (12.1%)**
-- **Python (7.0%)**
-- **C++ (4.9%)**
-- **Shell (3.3%)**
-- **Makefile (0.2%)**
 
 ## Colaboradores
 
