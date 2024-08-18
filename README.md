@@ -1,50 +1,33 @@
----
+# OSCA
 
-# Proyecto E.N.I.G.M.A.-OS
-E.V.E.R.E.S.T.-OS (Enhanced Virtualized Enterprise Real-time Extensible System Technology)
+**OSCA** (Operating System Creation Adventure) es un proyecto que busca desarrollar un sistema operativo desde cero. Está diseñado con el objetivo de explorar y aprender los principios fundamentales del diseño de sistemas operativos, involucrando a sus colaboradores en todos los aspectos de su creación, desde el kernel hasta la interfaz de usuario.
 
-Este proyecto contiene un bootloader básico escrito en ensamblador, configurado para construirse con SCons. El bootloader soporta varios sistemas de archivos, incluyendo FAT12, FAT16 y FAT32.
+## Descripción del Proyecto
 
-**Nota:** Este código forma parte de un código fuente en desarrollo para un sistema operativo más amplio. Actualmente, se está construyendo y se invita a los colaboradores a unirse para expandir y mejorar el proyecto.
+El desarrollo de OSCA es un reto educativo y técnico que cubre múltiples áreas de la informática. El proyecto es construido completamente desde cero, lo que significa que no se basa en ningún otro sistema operativo preexistente. El enfoque está en la creación de un sistema operativo funcional y eficiente, abarcando tanto el manejo de procesos, la administración de memoria, como la interacción con hardware.
 
-## Descripción
+## Lenguajes Utilizados
 
-El bootloader es un programa que se ejecuta al inicio del proceso de arranque del sistema. Su función principal es inicializar el entorno y cargar un segundo stage desde el disco.
+OSCA está desarrollado en una combinación de lenguajes de programación, seleccionados por su eficiencia y capacidad para interactuar con el hardware de bajo nivel:
 
-## Requisitos
+- **C (72.5%)**
+- **Assembly (12.1%)**
+- **Python (7.0%)**
+- **C++ (4.9%)**
+- **Shell (3.3%)**
+- **Makefile (0.2%)**
 
-- **SCons**: Herramienta de construcción de software.
-- **Assembler**: Herramienta para compilar archivos en lenguaje ensamblador.
-- **Entorno de emulación o hardware para pruebas**: Por ejemplo, QEMU o VirtualBox.
+## Colaboradores
 
-## Estructura del Proyecto
+Este proyecto es desarrollado y mantenido por:
 
-- **build_scripts/utility.py**: Contiene funciones útiles para la construcción, como `GlobRecursive`.
-- **linker.ld**: Script de enlace que define la disposición de la memoria.
-- **stage1.map**: Archivo de mapa generado durante el proceso de enlace.
-- ***.asm**: Archivos de ensamblador que contienen el código del bootloader.
-
-## Estructura del Código
-
-- **build_scripts/build.py**:
-  - Configura el entorno de construcción con SCons.
-  - Compila y enlaza archivos de ensamblador para crear el bootloader.
-
-- **bootloader.asm**:
-  - **.fsjump**: Salta al inicio del bootloader.
-  - **.fsheaders**: Configura los encabezados del sistema de archivos.
-  - **.entry**: Inicializa el entorno y maneja el disco.
-  - **.text**: Contiene el código principal del bootloader.
-  - **.rodata** y **.data**: Datos y mensajes utilizados por el bootloader.
-  - **.bss**: Espacio reservado para datos no inicializados.
-
-## Contribuciones
-
-Este proyecto está en desarrollo y estamos buscando colaboradores para expandirlo. Si estás interesado en contribuir, realiza un fork del repositorio y envía un pull request. Tu participación es muy apreciada.
+- **zheoa**
+- **Axel84727**
 
 ## Licencia
 
-Este proyecto está licenciado bajo la Licencia MIT. Consulta el archivo `LICENSE` para obtener más detalles.
+OSCA es un proyecto con una licencia privada y de paga. Para más información sobre la licencia, por favor contacta a los propietarios del proyecto.
 
 ---
 
+> **Nota:** OSCA está en constante desarrollo. Las características, capacidades y objetivos del proyecto pueden evolucionar con el tiempo a medida que el proyecto avanza.
