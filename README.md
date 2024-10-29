@@ -19,7 +19,7 @@ Este proyecto es desarrollado y mantenido por:
 
 ## Licencia
 
-OSCA es un proyecto con una licencia privada y de paga. Para más información sobre la licencia, por favor contacta a los propietarios del proyecto.
+OSCA es un proyecto con una licencia MIT.
 
 ---
 
